@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel="stylesheet" href="styles21.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./assets/Star 1.svg" alt="star" width="35" height="35">
+            <div class="logo-name">Ink. House</div>
+        </div>
+
+        <input type="checkbox" id="menu" class="menu-toogle" hidden>
+
+        <!-- Новая обёртка -->
+        <div class="mobile-nav-bar">
+            <label for="menu" class="burger-btn" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <a href="#" class="icon-link mobile-cart"></a>
+        </div>
+
+        <nav class="links-menu" id="navLinks">
+            <label for="menu" class="close-btn" aria-label="Close menu">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+            <a href="#">Репродукции</a>
+            <a href="#">Новинки</a>
+            <a href="#">О нас</a>
+            <a href="#" class="icon-link desktop-cart"></a>
+        </nav>
+
+        <nav class="links">
+            <a href="#">Репродукции</a>
+            <a href="#">Новинки</a>
+            <a href="#">О нас</a>
+            <a href="#" class="icon-link"></a>        
+        </nav>
+    </header>
+    <section class="first-screen">
+        <img src="./assets/Layer 0 1.png" alt="bird photo" class="desktop-first-photo">
+        <div class="container">
+            <div class="title">Реплики картин от <span>Ink. House</span></div>
+            <div class="subtitle">Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные цены.</div>
+            <button class="btn">Продукция</button>
+        </div>
+    </section>
+    <section class="second-screen">
+        <div class="catalog">
+            <div class="catalog-header">
+                <div class="products" id="Reproductions">Репродукции</div>
+                <nav class="navigations">
+                    <button class="btn-navigation" id="France">Франция</button>
+                    <button class="btn-navigation" id="Germany">Германия</button>
+                    <button class="btn-navigation" id="England">Англия</button>
+                </nav>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="./assets/03.png" alt="image of card" class="card-photo">
+                    <div class="author">Марсель Руссо</div>
+                    <div class="art-title">Охота Амура</div>
+                    <div class="structure">Холст, масло (50х80)</div>
+                    <div class="price">14 500 руб</div>
+                    <button class="btn">В корзину</button>
+                </div>
+                <div class="card">
+                    <img src="./assets/03 (1).png" alt="image of card" class="card-photo">
+                    <div class="author">Анри Селин</div>
+                    <div class="art-title">Дама с собачкой</div>
+                    <div class="structure">Акрил, бумага (50х80) </div>
+                    <div class="price">16 500 руб</div>
+                    <button class="btn">В корзину</button>
+                </div>
+                <div class="card">
+                    <img src="./assets/03 (2).png" alt="image of card" class="card-photo">
+                    <div class="author">Франсуа Дюпон</div>
+                    <div class="art-title">Процедура</div>
+                    <div class="structure">Цветная литография (40х60) </div>
+                    <div class="price">20 000 руб</div>
+                    <button class="btn">В корзину</button>
+                </div>
+                <div class="card">
+                    <img src="./assets/03 (3).png" alt="image of card" class="card-photo">
+                    <div class="author">Луи Детуш</div>
+                    <div class="art-title">Роза</div>
+                    <div class="structure">Бумага, акрил (50х80) </div>
+                    <div class="price">12 000 руб</div>
+                    <button class="btn">В корзину</button>
+                </div>
+                <div class="card">
+                    <img src="./assets/03 (4).png" alt="image of card" class="card-photo">
+                    <div class="author">Франсуа Дюпон</div>
+                    <div class="art-title">Птичья трапеза</div>
+                    <div class="structure">Цветная литография (40х60) </div>
+                    <div class="price">22 500 руб</div>
+                    <button class="btn">В корзину</button>
+                </div>
+                <div class="card">
+                    <img src="./assets/03 (5).png" alt="image of card" class="card-photo">
+                    <div class="author">Пьер Моранж</div>
+                    <div class="art-title">Пейзаж с рыбой</div>
+                    <div class="structure">Цветная литография (40х60) </div>
+                    <div class="price">20 000 руб</div>
+                    <button class="btn">В корзину</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="promo">
+        <div class="promo-logo">
+            <img src="./assets/Star 2.svg" alt="star" class="star2">
+            <div class="promo-title">Новая коллекция <br>французских авторов</div>
+        </div>
+        <div class="desciption">Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям, которые, в свою очередь, должны быть заблокированы в рамках своих собственных рациональных ограничений. 
+<br><br>Принимая во внимание показатели успешности, граница обучения кадров предопределяет высокую востребованность направлений прогрессивного развития.</div>
+        <button class="promo-btn">Ознакомиться</button>
+    </section>
+    <section class="frame">
+        <img src="./assets/Group 210.png" alt="group" class="group-photo">
+        <div class="content-block">
+            <div class="content-title">Наша команда</div>
+            <div class="content-description">Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет оценить значение экспериментов, поражающих по своей масштабности и грандиозности. Мы вынуждены отталкиваться от того, что консультация с широким активом.</div>
+            <div class="avatar-collection">
+                <img src="./assets/Ellipse 30.png" alt="avatar" class="ellipse">
+                <img src="./assets/Ellipse 31.png" alt="avatar" class="ellipse">
+                <img src="./assets/Ellipse 32.png" alt="avatar" class="ellipse">
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="block">
+            <div class="logo">
+                <img src="./assets/Star 1.svg" alt="star" width="35" height="35">
+                <div class="logo-name">Ink. House</div>
+            </div>
+            <div class="phone">
+                <div class="phone-number">+7 (999) 543-54-54</div>
+                <div class="place">Мастерская</div>
+            </div>
+        </div>
+        <div class="block-about">
+            <nav class="links-to-navigations">
+                <a href="#Reproductions" id="first">Репродукции</a>
+                <a href="#France">Франция</a>
+                <a href="#Germany">Германия</a>
+                <a href="#England">Англия</a>
+            </nav>
+            <nav class="links-to-navigations">
+                <a href="#" id="first">Новинки</a>
+                <a href="#">2021</a>
+                <a href="#">2020</a>
+            </nav>
+            <nav class="links-to-navigations">
+                <a href="#" id="first">О нас</a>
+                <a href="#">Художники</a>
+                <a href="#">Менеджеры</a>
+            </nav>
+        </div>
+        <div class="block-social">
+            <div class="socials">
+                <a href="#" class="social-icon"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="texts">
+                <div class="text1">Ink. House ®</div>
+                <div class="text2">All rights reserved</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
