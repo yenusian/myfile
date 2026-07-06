@@ -1,0 +1,100 @@
+.box1{
+    background-color: rgb(203, 135, 135);
+    width: 200px;
+    height: 200px;
+    box-shadow: 10px 5px 5px 2px rgb(117, 66, 66);
+    padding: auto;
+    margin: 20px;
+}
+.box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(203, 135, 135);
+    width: 200px;
+    height: 200px;
+    padding: auto;
+    margin: 20px;
+    box-shadow: -2em -1em 1em red;
+}
+.box3{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: rgb(203, 135, 135);
+    width: 200px;
+    height: 200px;
+    padding: auto;
+    margin: 20px;
+    box-shadow: inset 1em 2em 10px blue;
+}
+.text1{
+    text-shadow: 2px 2px 5px pink;
+}
+.text2{
+    text-shadow: 2px 1px rgb(51, 121, 147);
+}
+.text3{
+    font-size: 30px;
+    color: aliceblue;
+    text-shadow: 
+        1px 1px red,
+        0 0 1em blue,
+        0 0 0.2em purple;
+}
+.magic{
+    color: rgb(137, 108, 108);
+    text-shadow: 3px 3px 5px gold;
+}
+.container1{
+    background: linear-gradient(45deg, gold 10%, silver);
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding: 10px;
+}
+.container2{
+    background: linear-gradient(135deg, rgb(236, 218, 128) 10%, rgb(73, 198, 49));
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding: 10px;
+}
+.container3{
+    background: linear-gradient(to right, pink 20%, purple);
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding: 10px;
+}
+.box{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid pink;
+    box-shadow: 5px 5px 5px rgb(141, 97, 97);
+    width: 1100px;
+    height: fit-content;
+}
+.container4{
+    background: radial-gradient(purple 10%, pink 10%);
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding: 10px;
+}
+.container5{
+    background: radial-gradient(white, blue, orange, green);
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding: 10px;
+}
+.container6{
+    background: radial-gradient(ellipse at 100%, pink 10%, red, brown, black, gray);
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding: 10px;
+}
