@@ -1,0 +1,16 @@
+body{
+    font-family: "Oswald", "Raleway", "Montserrat", sans-serif;
+}
+@font-face {
+    font-family: "ParagraphStyle";
+    src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "AlternativeFont";
+    src: url(./fonts/MontenegrinGothicOne-Regular.ttf);
+}
+
+p{
+    font-family: "ParagraphStyle", "AlternativeFont", sans-serif;
+    color: blueviolet;
+}
