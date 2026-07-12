@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+<style>
+    .box {
+    padding: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+    }
+    .box::before{
+    content: "Вставлено перед содержимым полностью контейнера.";
+    display: block;
+    color: rgb(132, 179, 74);
+    margin-bottom: 30px;
+    }
+    /* Используя класс абзаца мы вставляем контент перед каждым абзацем */
+    .paragraph::before {  
+    content: "Вставлено перед содержимым абзаца.";
+    display: block;
+    color: pink;
+    margin-bottom: 10px;
+    }
+    
+    .title{
+        color: rgb(102, 27, 27);
+    }
+    .subtitle{
+        color: rgb(102, 27, 27);
+    }
+    .title::after{
+        content: " ↓";
+        color: red;
+    }
+    .subtitle::after{
+        content: "ヽ(•‿•)ノ";
+        color: blue;
+    }
+
+    .content-box{
+        position: relative;
+        width: 200px;
+        height: 150px;
+        background-color: antiquewhite;
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .content-box::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        border-top: 5px solid brown;
+        border-left: 5px solid brown;
+    }
+    .content-box::after{
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 20px;
+        height: 20px;
+        border-bottom: 5px solid brown;
+        border-right: 5px solid brown;
+    }
+    
+    .content{
+        margin-top: 20px;
+        position: relative;
+        width: 300px;
+        height: 100px;
+        background-color: rgb(171, 112, 34);
+        color: #fff;
+        font-style: italic;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 30px;
+    }
+    .content::before{
+        content: "\201C";
+        position: absolute;
+        top: -5px;
+        left: 5px;
+        font-size: 50px;
+    }
+    .content::after{
+        content: "\201D";
+        position: absolute;
+        bottom: -30px;
+        right: 10px;
+        font-size: 50px;
+    }
+    
+</style>
+</head>
+<body>
+    <h2>Task 1 - ::before </h2>
+    <div class="box">
+        <p class="paragraph">Этот абзац является примером для показа работы псевдокласса before.</p>
+        <p class="paragraph">Этот абзац является примером для показа работы псевдокласса before.</p>
+        <p class="paragraph">Этот абзац является примером для показа работы псевдокласса before.</p>
+    </div>
+    <h2 class="title">Task 2 - ::after</h2>
+    <h3 class="subtitle">Демонстрация того как работает псевдоэлемент after которые дополняют заголовки с декоративными элементамию.</h3>
+    <h2>Task 3 - combinations of both pseudoclasses</h2>
+    <div class="content-box">Контент который помещен в рамку</div>
+    <div class="content">Carpe diem</div>
+</body>
+</html>
