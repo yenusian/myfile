@@ -6,14 +6,14 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.cards1{
+.cards-catalog--one{
     margin-top: 85px;
     width: 730px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
-.cards2{
+.cards-catalog--two{
     margin-top: 85px;
     width: 1110px;
     display: grid;
@@ -27,40 +27,40 @@ body{
    flex-direction: column;
    width: fit-content;
 }
-.card-photo{
+.card__photo{
    width: 310px;
    height: 422px;
    margin-bottom: 20px;
 }
-.author{
+.card__author{
    color: #86928B;
    font-weight: 500;
    font-size: 18px;
    line-height: 100%;
    margin-bottom: 10px;
 }
-.art-title{
+.card__art-title{
    color: #2C2D35;
    font-weight: 500;
    font-size: 30px;
    line-height: 100%;
    margin-bottom: 8px;
 }
-.structure{
+.card__structure{
    color: #2C2D35;
    font-weight: 500;
    font-size: 18px;
    line-height: 100%;
    margin-bottom: 30px;
 }
-.price{
+.card__price{
    color: #598D66;
    font-weight: 500;
    font-size: 24px;
    line-height: 100%;
    margin-bottom: 20px;
 }
-.btn{
+.card__btn{
    padding: 20px 60px;
    color: #598D66;
    background-color: transparent;
@@ -70,14 +70,14 @@ body{
    line-height: 100%;
    cursor: pointer;
 }
-.btn:hover{
+.card__btn:hover{
    background-color: #598D66;
    color: #F4F6F5;
 }
-.btn:focus{
+.card__btn:focus{
    background-color: #D4E8D9;
 }
-.btn:active{
+.card__btn:active{
    background-color: #376B44;
    color: #FFFFFF;
 }
