@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <script>
+        //Task 1
+        let a = 10;
+        let b = 5;
+        let c = 2;
+        console.log(a+b+c); // 17
+        console.log((a+c)-b); // 7
+        console.log((a*b)/c); // 25
+        console.log(a%b); //0
+        
+        //Task 2
+        let x = 7;
+        console.log((x++)+(++x)); // 7 + 9 = 16
+        console.log((x--)-(--x)); // 9 - 7 = 2
+
+        //Task 3
+        console.log('The result is: ', String(4+5));
+
+        //Task 4
+        console.log((a>b) && (a>0) && (b>0)); //true
+        console.log((c<10) || (c==2)); //true
+        console.log((a/c)!=5); //false
+
+        //Task 5 - Разные ответы связаны с тем что второе условие проверяет также data type обеих цифр.
+        console.log(10 == '10'); //true
+        console.log(10 === '10'); //false
+
+        //Task 6
+        let z = prompt("Write an integer z: ")
+        z = Number(z);
+        console.log(((z % 2 == 0) || (z % 3 == 0)) && z % 6 != 0);
+
+        let y = prompt("Write an integer y: ")
+        y = Number(y);
+        console.log(!(y > 10 || y < 5));
+        
+    </script> 
+</head>
+<body>
+    <h2>Operators</h2>
+</body>
+</html>
