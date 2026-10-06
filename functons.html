@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <script>
+        //Task 1
+        greet = () => {
+            return "Привет, мир!";
+        }
+        console.log(greet());
+        
+        //Task 2
+        function sayHello (name) {
+            return "Привет, " + name + "!";
+        }
+        let name = prompt("Ваше имя: ");
+        alert(sayHello(name));
+
+        //Task 3
+        function sum (num1, num2) {
+            return num1 + num2;
+        }
+        const n1 = prompt("Напишите первое число:");
+        const num1 = Number(n1);
+        const n2 = prompt("Напишите второе число:");
+        const num2 = Number(n2);
+        console.log(sum(num1, num2));
+
+        //Task 4
+        function isEven (num) {
+            return num % 2 == 0;
+        }
+        const n = prompt("Число на проверку четности:")
+        const num = Number(n);
+
+        if (isEven(num)) {
+            console.log(true);
+        } else {
+            console.log(false);
+        }
+        
+        //Task 5 
+        function max(a, b) {
+            if (a > b) {
+                return a;
+            } else if (a < b){
+                return b;
+            } else {
+                return "Числа равны";
+            }
+        }
+        const a = prompt("Введите первое число для сравнения");
+        const b = prompt("Введите первое число для сравнения");
+
+        const numA =  Number(a);
+        const numB = Number(b);
+
+        console.log(max(numA, numB));
+
+        //Task 6
+        function getInitials(firstName, lastName) {
+            const firstInitial = firstName[0].toUpperCase();
+            const lastInitial = lastName[0].toUpperCase();
+
+            return firstInitial+"."+lastInitial+".";
+        }
+        console.log(getInitials("Алиса", "Боброва"));
+        console.log(getInitials("Джони", "Депп"));
+        console.log(getInitials("Лия", "Никитовна"));
+
+        //Task 7
+        function square(x){
+            return x*x;
+        }
+        function cube(x){
+            return x*x*x;
+        }
+        function cubeWithSquare(x){
+            return x*square(x);
+        }
+        console.log(square(3));
+        console.log(cube(3));
+        console.log(cubeWithSquare(3));
+
+        //Task 8
+        const sumTask8 = (num1, num2) => num1 + num2;
+        console.log(sumTask8(num1, num2));
+
+        //Task 9 (additional)
+        function getFactorial(z) {
+            if (z < 0) return undefined;
+
+            let res = 1;
+            for (let i = 1; i <= z; i++){
+                res *= i; 
+            }
+            return res;
+        }
+        console.log(getFactorial(-2));
+        console.log(getFactorial(5));
+        console.log(getFactorial(4));
+
+
+    </script> 
+</head>
+<body>
+    <h2>Functions</h2>
+</body>
+</html>
